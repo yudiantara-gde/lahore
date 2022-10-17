@@ -1,0 +1,23 @@
+.forms-appointment(data-aos="fade-up") 
+    form(action="") 
+        .mb-3 
+            h2.text-center Appointment
+        .mb-3 
+            select(name="location" class="form-select")
+                option(value="Select Location") Select Location
+                option(value="Denpasar") Denpasar
+                option(value="Tabanan") Tabanan
+                option(value="Nusa Dua") Nusa Dua
+                option(value="Badung") Badung
+        .mb-3     
+            input(type="text" name="name" placeholder="Your Name" class="form-control")
+        .mb-3 
+            input(type="text" name="date" placeholder="Birthday DD/MM/YY" class="form-control")
+        .mb-3 
+                input(type="number" name="phone" placeholder="Your Phone" class="form-control")
+        .mb-3 
+            input(type="email" name="email" placeholder="Your Email" class="form-control")
+        .mb-3 
+            textarea(name="message" placeholder="Your Message" class="form-control") 
+        .mb-3 
+            button(type="submit" name="submit" class="btn btn-primary") Make Appointment 

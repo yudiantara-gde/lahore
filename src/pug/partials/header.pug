@@ -1,0 +1,24 @@
+.header-wrap.navbar.navbar-expand-lg
+    .container-xl
+        .logo.navbar-brand 
+            a(href="index.html")
+                img(src="/assets/images/logo.png")
+        button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-controls="navbarMobile" aria-expanded="false" aria-label="Toggle navigation")
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse.justify-content-lg-end#navbarMobile
+                ul.navbar-nav.me-auto 
+                    li.nav-item
+                        a.nav-link(href="index.html") Home
+                    li.nav-item
+                        a.nav-link(href="about.html") About Us 
+                    li.nav-item
+                        a.nav-link(href="departement.html") Departement 
+                    li.nav-item
+                        a.nav-link(href="contact.html") Contact Us
+                    li.nav-item.dropdown
+                        a.nav-link.dropdown-toggle(href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false") Pages
+                        ul.dropdown-menu(aria-labelledby="navbarScrollingDropdown") 
+                            li:a.dropdown-item(hre="#") Spa
+                            li:a.dropdown-item(href="") Tours
+
+                a(href="appointment.html").btn.btn-transparent.btn-large Make an appointment

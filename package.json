@@ -1,0 +1,38 @@
+{
+  "name": "lahore",
+  "version": "1.0.0",
+  "description": "Lahore Based Digital Agency",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "stater",
+    "packages"
+  ],
+  "author": "yudiantara.gde@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "bootstrap": "4.6",
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-install": "^1.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.50.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yudiantara-gde/lahore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yudiantara-gde/lahore/issues"
+  },
+  "homepage": "https://github.com/yudiantara-gde/lahore#readme"
+}
