@@ -1,0 +1,45 @@
+@use "sass:math";
+
+//fonts
+@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Regular'), url('assets/fonts/Inter-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Inter Semi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Semi Bold'), url('assets/fonts/Inter-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Bold'), url('assets/fonts/Inter-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Inter Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Medium'), url('assets/fonts/Inter-Medium.woff') format('woff');
+}
+
+//swiper font icon
+@font-face {
+    font-family: 'swiper-icons';
+    src: url("/assets/fonts/swiper-icons.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import "base/base";
+@import "component/component";
+@import "layout/layout";
+@import "pages/pages";
+
+
+.no-scroll {
+    overflow: hidden;
+}

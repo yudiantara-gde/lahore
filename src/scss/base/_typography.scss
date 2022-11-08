@@ -1,0 +1,105 @@
+html,
+body {
+    font-family: _font(inter);
+    font-weight: _font(weight-400);
+    font-size: _rem(16);
+    line-height: _rem(26);
+    color: _color(black);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: _font(inter-bold);
+    font-weight: _font(weight-400);
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, .h1 {font-size: _rem(40); line-height: _rem(50);}
+h2, .h2 {font-size: _rem(32); line-height: _rem(42);}    
+h3, .h3 {font-size: _rem(28); line-height: _rem(38);}
+h4, .h4 {font-size: _rem(24); line-height: _rem(34);}
+h5, .h5 {font-size: _rem(20); line-height: _rem(30);}
+h6, .h6 {font-size: _rem(16); line-height: _rem(26);}
+
+p {
+    font-family: _font(inter);
+    font-size: _rem(16);
+    line-height: _rem(26);
+    letter-spacing: normal;
+    color: _color(black);
+    margin-bottom: _rem(30);
+
+    b {
+        font-family: _font(inter-bold);
+    }
+}
+
+p.semi,
+blockquote {
+    font-family: _font(inter-semi);
+}
+
+p.medium {
+    font-family: _font(inter-medium);
+}
+
+a {
+    @include vendor('transition', 'all #{_duration(transition)} ease-in-out');
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+strong, b {
+    font-family: _font(inter-bold);
+}
+
+em, i {
+    font-style: italic;
+}
+
+small,
+.text-small,
+.text-tiny {
+    font-family: _font(inter);
+    font-weight: _font(weight-400);
+}
+
+small,
+.text-small {
+    font-size: _rem(12);
+    line-height: _rem(26);
+}
+
+.text-tiny {
+    font-size: _rem(10);
+    line-height: _rem(26);
+}
+
+@include media-breakpoint-down(md) {
+
+    html {font-size: _rem(14); line-height: _rem(24);}
+    h1 {font-size: _rem(36); line-height: _rem(50);}
+    h2 {font-size: _rem(32); line-height: _rem(42);} 
+    p {font-size: _rem(15); line-height: _rem(25); margin-bottom: _rem(15);}
+    small,
+    .text-small,
+    .text-tiny {line-height: _rem(24);}
+}
+
+@include media-breakpoint-down(sm) {
+
+    h1 {font-size: _rem(32); line-height: _rem(42);}
+    h2 {font-size: _rem(28); line-height: _rem(38);}    
+    h3 {font-size: _rem(24); line-height: _rem(34);}
+    h4 {font-size: _rem(22); line-height: _rem(32);}
+}
+
+@include media-breakpoint-up(xs) {
+
+    h1 {font-size: _rem(30); line-height: _rem(42);}
+}

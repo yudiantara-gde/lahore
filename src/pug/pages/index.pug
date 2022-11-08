@@ -1,125 +1,181 @@
 extends ../layout/default-layout.pug
 
 block variables
-    - var meta_title    = 'Le-Beauty - Free HTML Beauty and Healthy'
+    - var meta_title    = 'Lahore Based Digital Agency'
     - var meta_desc     = 'Free HTML using gulp, pug and sass'
     - var meta_keyword 	= 'free html, html, gulp 4.0, pug, sass, stater kick'
     - var meta_url      = ''
     - var meta_img      = ''
     - var pageClass     = ''
     - var header        = ''
-
-block content
-    <!-- banner home page -->
-    .banner
-        img(src="/assets/images/main-banner.png" srcset="/assets/images/main-banner@2x.png 2x, /assets/images/main-banner@3x.png 3x")
-        .container-xl
-            h1(data-aos="fade-up") About
-                br 
-                | Le-Beauty 
-            p(data-aos="fade-up") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac iaculis nisi, ac malesuada ante. 
-            
-
-    .appointment 
-        .container-xl
-            .row
-                .col-lg-6.d-none.d-lg-flex
-                    .img-appointment(data-aos="fade-up")
-                        img(src="/assets/images/img-appointment.jpg" srcset="/assets/images/img-appointment@2x.jpg 2x, /assets/images/img-appointment@3x.jpg 3x")
-                .col-lg-6
-                    include ../components/appointment
-    .container-xl
-        .about-us.padd-pages
-            .wrp-head 
-                h2.text-center(data-aos="fade-up")
-                    span about us 
-                    | We have more than 
-                    b 10 years 
-                    | experience
-                p.text-center.mb-0(data-aos="fade-up") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-
-        .our-service.padd-pages 
-            .row 
-                .col-lg-6
-                    .wrp-head.text-center.text-lg-left(data-aos="fade-right")
-                        h2.text-center.text-lg-left
-                            span.text-center.text-lg-left  our service 
-                            | We are providing the 
-                            b top services 
-                        p.text-center.text-lg-left Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        ul.d-none.d-lg-block
-                            li Eye Care 
-                            li Dental Care 
-                            li Primary Care 
-                            li Cardiology 
-                        a(href="" class="btn btn-primary p-0") 
-                            span All Services
-                .col-lg-6 
-                    .wrp-body 
-                        .l-icon 
-                            .row 
-                                .col-6.left
-                                    .icon(data-aos="fade-left")
-                                        .wrp-icon
-                                            i.icons.eye 
-                                            span Eye Care 
-                                    .icon(data-aos="fade-left")
-                                        .wrp-icon
-                                            i.icons.dental 
-                                            span Dental Care 
-                                .col-6.right
-                                    .icon(data-aos="fade-left")
-                                        .wrp-icon
-                                            i.icons.primary 
-                                            span Primary Care 
-                                    .icon(data-aos="fade-left")
-                                        .wrp-icon
-                                            i.icons.cardiology 
-                                            span Cardiology
-
-        .our-doctor.padd-pages 
-            .wrp-head(data-aos="fade-up") 
-                h2.text-center 
-                    span our doctor 
-                    | They are 
-                    b all experts 
-            
-            .wrp-body(data-aos="fade-up") 
-                include ../components/list-doctor
-
-        .join-team.padd-pages  
-            .wrp-head(data-aos="fade-up") 
-                h2.text-center 
-                    | Wanna join our 
-                    br 
-                    span.text-line 
-                        span.text team ?
-                p.text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                p.text-center.mb-0 
-                    a.underline.primary(href="") View all career 
     
-    .our-testimonial.padd-pages 
-        .container-fluid
+block content
+    .big-title
+        .container-lg 
+            p Lahore Based Digital Agency
+
+            .social-media 
+                span 
+                    a(href="") Facebook 
+                span 
+                    a(href="") Instagram 
+                span 
+                    a(href="") Behance
+
+    .heroes-banner 
+        .container-lg
+            .banner
+                .swiper 
+                    .swiper-wrapper
+                        .swiper-slide
+                            .banner-image
+                                img.lazyload.img-absolute.center.d-block.d-md-none(src="assets/images/banner-seo-mobile.jpg", alt="")
+                                img.lazyload.img-absolute.center.d-none.d-md-block(src="assets/images/banner-seo.jpg", alt="")
+                            .banner-text.left-side
+                                .h1 
+                                    b Reach & connect with your 
+                                    | target customer.
+                                p Ensuring the best return on investment for your bespoke SEO campaign requirement.
+
+                                .banner-form 
+                                    form(action="")
+                                        input.form-control-plaintext.form-control-sm(type="text", name="link" placeholder="Your Current Site Link")
+                                        button.btn.btn-sm(type="submit") 
+                                            span Analysis yoour site 
+
+                        .swiper-slide
+                            .banner-image
+                                img.lazyload.img-absolute.center.d-block.d-md-none(src="assets/images/banner-store-mobile.jpg", alt="")
+                                img.lazyload.img-absolute.center.d-none.d-md-block(src="assets/images/banner-store.jpg", alt="")
+                            .banner-text.left-side
+                                .h1 
+                                    b Grow You'r online Business 
+                                    | with us.
+                                p Rorem ipsum dolor sit ametconsectetur adipiscing elit,tempor Rorem ipsum dolor sit ametconsectetur adipiscing eli.
+                                    br 
+                                    a.btn(href="#", target="_blank", rel="noopener noreferrer") 
+                                        span Our All Service
+                    .swiper-btn-prev
+                        span prev
+                    .swiper-btn-next
+                        span next
+
+                    .swiper-pagination
+    
+    .our-works 
+        .container-lg
+            .c-title  
+                p 
+                    b Explore recent works
+                p We’re constantly refining our product. Adding new features. Working to help your section business grow.
+            .l-works 
+                .swiper 
+                    .swiper-wrapper
+                        .swiper-slide.title 
+                            .c-title  
+                                p 
+                                    b Explore recent works
+                                p We’re constantly refining our product. Adding new features. Working to help your section business grow.
+                        .swiper-slide
+                            .works 
+                                .wrp-works 
+                                    .thumbs
+                                        a(href="")
+                                            img(src="assets/images/work-01.jpg", alt="our works" title="our works")
+                                    .body
+                                        h3 Ilustrator for Invite Studio 
+                                        p
+                                            a.lbl.lbl-ilustator(href="") Ilustrator 
+                                            a.lbl.lbl-website(href="") Website
+                        .swiper-slide
+                            .works 
+                                .wrp-works 
+                                    .thumbs
+                                        a(href="")
+                                            img(src="assets/images/work-02.jpg", alt="our works" title="our works")
+                                    .body
+                                        h3 Admin Dashboard by Maxsol
+                                        p
+                                            a.lbl.lbl-website(href="") Dashboard 
+                                            a.lbl.lbl-themes(href="") Themes
+                        .swiper-slide
+                            .works 
+                                .wrp-works 
+                                    .thumbs
+                                        a(href="")
+                                            img(src="assets/images/work-03.jpg", alt="our works" title="our works")
+                                    .body
+                                        h3 Apps by Maxsol
+                                        p
+                                            a.lbl.lbl-apps(href="") Apps
+                        .swiper-slide
+                            .works 
+                                .wrp-works 
+                                    .thumbs
+                                        a(href="")
+                                            img(src="assets/images/work-04.jpg", alt="our works" title="our works")
+                                    .body
+                                        h3 Ilustrator
+                                        p
+                                            a.lbl.lbl-website(href="") Website   
+                    .swiper-pagination
+
+    .our-service 
+        .container-lg 
+            .c-title  
+                p 
+                    b Featured service
+                p We’re constantly refining our product. Adding new features. Working to help your section business grow.
             .row 
-                .col-lg-4 
-                    .wrp-head(data-aos="fade-right")
-                        h2.text-center.text-lg-start 
-                            span.text-lg-start testimonial 
-                            | what <b>clients</b> says about us
-                .col-lg-8
-                    .wrp-body(data-aos="fade-left")
-                        include ../components/testimonial-home
-    .our-blog.padd-pages  
-        .container-xl 
-            .wrp-head(data-aos="fade-up") 
-                h2.text-center 
-                    span our blog 
-                    | Our 
-                    b lastest 
-                    | news 
-            .wrp-body 
-                include ../components/news-home
-                p.text-center.mb-0(data-aos="fade-up") 
-                    a.underline.primary(href="") View all blogs
-                        
+                .service.col-xs-6.col-md-4.col-lg-3
+                    .wrp-service 
+                        a(href="")
+                            p 
+                                span 01
+                                b ui-ux design
+                .service.col-xs-6.col-md-4.col-lg-3
+                    .wrp-service 
+                        a(href="")
+                            p 
+                                span 02
+                                b design coding
+                .service.col-xs-6.col-md-4.col-lg-3
+                    .wrp-service 
+                        a(href="")
+                            p 
+                                span 03
+                                b branding
+                .service.col-xs-6.col-md-4.col-lg-3
+                    .wrp-service 
+                        a(href="")
+                            p 
+                                span 04
+                                b marketing
+                .service.col-xs-6.col-md-4.col-lg-3
+                    .wrp-service 
+                        a(href="")
+                            p 
+                                span 05
+                                b ios apps
+                .service.col-xs-6.col-md-4.col-lg-3
+                    .wrp-service 
+                        a(href="")
+                            p 
+                                span 06
+                                b custom cms
+                .service.col-xs-6.col-md-4.col-lg-3
+                    .wrp-service 
+                        a(href="")
+                            p 
+                                span 07
+                                b java apps
+                .service.col-xs-6.col-md-4.col-lg-3
+                    .wrp-service 
+                        a(href="")
+                            p 
+                                span 08
+                                b ecommerce
+
+
+
 block script

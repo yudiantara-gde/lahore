@@ -1,8 +1,10 @@
 # Luxestate Template
 
-This is the source code to [Luxestate Template From Graphberry](https://www.graphberry.com/item/luxestate--real-estate-landing-page). Making projects and templates help you improve your coding skills by building realistic projects.
+This is my exercise front end stater kick [Lahore Baased Digital Agency](https://lahore.github.io/index.html#/).
 
-**Note:** PSD file is available at `design` directory, or you can use a [direct download link](https://github.com/PhilopaterHany/Luxestate-Template/raw/main/design/Luxestate-Template.psd).
+**Note:** 
+Sketch file is available at `design` directory, or you can use a [direct download link](https://www.sketchappsources.com/free-source/4197-agency-web-template-sketch-freebie-resource.html).
+this not my design, i just download and use to learn about node, sass, pug and bootstrap.
 
 ## Table of contents
 
@@ -27,7 +29,7 @@ To run the code and see the final HTML page, you must follow these steps:
 
 -   In the root directory type `gulp` in terminal to start the local server at port 9000.
 
--   Open Your Browser and type `localhost:9000` in the search bar, and that's it. enjoy!
+-   Open Your Browser and type `http://localhost:8080/` in the search bar, and that's it. enjoy!
 
 ### Screenshots
 
@@ -35,9 +37,9 @@ To run the code and see the final HTML page, you must follow these steps:
 
 ### Links
 
--   Design URL: [Graphberry](https://www.graphberry.com/item/luxestate--real-estate-landing-page)
--   Source Code URL: [Github](https://github.com/PhilopaterHany/Luxestate-Template/)
--   Live Site URL: [Github Pages](https://philopaterhany.github.io/Luxestate-Template/)
+-   Design URL: [Graphberry](https://www.sketchappsources.com/free-source/4197-agency-web-template-sketch-freebie-resource.html)
+-   Source Code URL: [Github](https://github.com/yudiantara-gde/lahore.github.io)
+-   Live Site URL: [Github Pages](https://lahore.github.io/index.html#/)
 
 ## My process
 
@@ -70,11 +72,8 @@ To run the code and see the final HTML page, you must follow these steps:
 
 #### Fonts
 
--   Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+-   Family: [Inter](https://fonts.google.com/specimen/Inter?query=inter)
 -   Weights: 400, 500, 700
-
--   Family: [Qwitcher Grypen](https://fonts.google.com/specimen/Qwitcher+Grypen)
--   Weight: 400
 
 ### What I learned
 
@@ -167,7 +166,4 @@ Agent JSON Model:
 
 ## Author
 
--   Website - Portfolio Is Coming Out Soon!
--   Twitter - [@PhilopaterHany4](https://www.twitter.com/PhilopaterHany4/)
--   Facebook - [Philopater Hany](https://www.facebook.com/philopater.hany.3)
--   Discord - [#8178](https://discord.com/#8178/)
+yudiantara.gde
