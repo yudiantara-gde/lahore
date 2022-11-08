@@ -10,6 +10,7 @@ var gulp    = require('gulp'),
 
 function reload(done) {
     connect.server({
+        root: 'dist/',
         livereload: true,
         port: 8080
     });
