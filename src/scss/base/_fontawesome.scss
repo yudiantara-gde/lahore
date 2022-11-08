@@ -5,15 +5,8 @@
 //font awesome brand
 :root, :host {
     --#{$fa-css-prefix}-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
-}
-
-@font-face {
-    font-family: 'Font Awesome 6 Brands';
-    font-style: normal;
-    font-weight: 400;
-    font-display: $fa-font-display;
-    src: url('#{$fa-font-path}/fa-brands-400.woff2') format('woff2'),
-        url('#{$fa-font-path}/fa-brands-400.ttf') format('truetype');
+    --#{$fa-css-prefix}-font-regular: normal 400 1em/1 "#{ $fa-style-family }";
+    --#{$fa-css-prefix}-font-solid: normal 900 1em/1 "#{ $fa-style-family }";
 }
 
 .fab,
@@ -25,39 +18,11 @@
 @each $name, $icon in $fa-brand-icons {
     .#{$fa-css-prefix}-#{$name}:before { content: unquote("\"#{ $icon }\""); }
 }
-
-//font awesome regular
-:root, :host {
-    --#{$fa-css-prefix}-font-regular: normal 400 1em/1 "#{ $fa-style-family }";
-}
-  
-@font-face {
-    font-family: 'Font Awesome 6 Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-display: $fa-font-display;
-    src: url('#{$fa-font-path}/fa-regular-400.woff2') format('woff2'),
-        url('#{$fa-font-path}/fa-regular-400.ttf') format('truetype');
-}
   
 .far,
 .#{$fa-css-prefix}-regular {
     font-family: 'Font Awesome 6 Regular';
     font-weight: 400;
-}
-
-// font awesome solid
-:root, :host {
-    --#{$fa-css-prefix}-font-solid: normal 900 1em/1 "#{ $fa-style-family }";
-}
-  
-@font-face {
-    font-family: 'Font Awesome 6 Solid';
-    font-style: normal;
-    font-weight: 900;
-    font-display: $fa-font-display;
-    src: url('#{$fa-font-path}/fa-solid-900.woff2') format('woff2'),
-        url('#{$fa-font-path}/fa-solid-900.ttf') format('truetype');
 }
   
 .fas,

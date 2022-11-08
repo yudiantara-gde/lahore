@@ -28,10 +28,10 @@ function styles() {
             cascade: false
         }))
         .pipe(sass({outputStyle: 'expanded'}))
-        .pipe(gulp.dest('assets/css'))
+        .pipe(gulp.dest('dist/css'))
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename('styles.min.css'))
-        .pipe(gulp.dest('assets/css'))
+        .pipe(gulp.dest('dist/css'))
         .pipe(connect.reload())
         .pipe(browserSync.stream())
     );
@@ -42,10 +42,10 @@ function scripts() {
     return (
         gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'src/js/scripts.js'])
         .pipe(plumber())
-        .pipe(gulp.dest('assets/js'))
+        .pipe(gulp.dest('dist/js'))
         .pipe(uglify())
         .pipe(rename('scripts.min.js'))
-        .pipe(gulp.dest('assets/js'))
+        .pipe(gulp.dest('dist/js'))
         .pipe(connect.reload())
     );
 }
@@ -65,7 +65,7 @@ function views() {
         .pipe(pug({
             pretty: true
         }))
-        .pipe(gulp.dest('./'))
+        .pipe(gulp.dest('dist'))
         .pipe(connect.reload())
     );
 }

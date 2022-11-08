@@ -22,7 +22,7 @@
             color: transparent;
             border: 0;
             outline: none;
-            background: url('/assets/images/logo-with-text.png') no-repeat;
+            background: url('#{$path-img}logo-with-text.png') no-repeat;
             background-size: 100% 100%;
             background-position: center;
         }

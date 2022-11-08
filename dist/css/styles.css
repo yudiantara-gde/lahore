@@ -3,31 +3,52 @@
   font-family: "Inter Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Regular"), url("assets/fonts/Inter-Regular.woff") format("woff");
+  src: local("Inter Regular"), url("../fonts/Inter-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Inter Semi Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Semi Bold"), url("assets/fonts/Inter-SemiBold.woff") format("woff");
+  src: local("Inter Semi Bold"), url("../fonts/Inter-SemiBold.woff") format("woff");
 }
 @font-face {
   font-family: "Inter Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Bold"), url("assets/fonts/Inter-Bold.woff") format("woff");
+  src: local("Inter Bold"), url("../fonts/Inter-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Inter Medium";
   font-style: normal;
   font-weight: normal;
-  src: local("Inter Medium"), url("assets/fonts/Inter-Medium.woff") format("woff");
+  src: local("Inter Medium"), url("../fonts/Inter-Medium.woff") format("woff");
 }
 @font-face {
   font-family: "swiper-icons";
-  src: url("/assets/fonts/swiper-icons.woff") format("woff");
+  src: url("../fonts/swiper-icons.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+}
+@font-face {
+  font-family: "Font Awesome 6 Solid";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts//fa-brands-400.woff2") format("woff2"), url("../fonts//fa-brands-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Font Awesome 6 Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts//fa-regular-400.woff2") format("woff2"), url("../fonts//fa-regular-400.ttf") format("truetype");
 }
 /*!
  * Bootstrap  v5.2.2 (https://getbootstrap.com/)
@@ -3778,15 +3799,15 @@ textarea.form-control-lg {
 .btn {
   --bs-btn-padding-x: 0;
   --bs-btn-padding-y: 0;
-  --bs-btn-font-family: Inter Medium, Helvetica, sans-serif;
-  --bs-btn-font-size: 0.9375rem;
-  --bs-btn-font-weight: 400;
-  --bs-btn-line-height: 1.5rem;
+  --bs-btn-font-family: _font(inter-medium);
+  --bs-btn-font-size: _rem(15);
+  --bs-btn-font-weight: _font(weight-400);
+  --bs-btn-line-height: _rem(24);
   --bs-btn-color: #212529;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 0;
   --bs-btn-border-color: transparent;
-  --bs-btn-border-radius: 0.25rem;
+  --bs-btn-border-radius: _rem(4);
   --bs-btn-hover-border-color: transparent;
   --bs-btn-box-shadow: unset;
   --bs-btn-disabled-opacity: 0.65;
@@ -4647,7 +4668,7 @@ textarea.form-control-lg {
 }
 
 .btn-group {
-  border-radius: 0.25rem;
+  border-radius: _rem(4);
 }
 
 .btn-group > :not(.btn-check:first-child) + .btn,
@@ -4889,7 +4910,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-font-size: 1.25rem;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
-  --bs-navbar-toggler-border-radius: 0.25rem;
+  --bs-navbar-toggler-border-radius: _rem(4);
   --bs-navbar-toggler-focus-width: 0;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
   position: relative;
@@ -15007,15 +15028,10 @@ textarea.form-control-lg {
 }
 :root, :host {
   --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
 }
 
-@font-face {
-  font-family: "Font Awesome 6 Brands";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("/assets/fonts/fa-brands-400.woff2") format("woff2"), url("/assets/fonts/fa-brands-400.ttf") format("truetype");
-}
 .fab,
 .fa-brands {
   font-family: "Font Awesome 6 Brands";
@@ -16906,34 +16922,12 @@ textarea.form-control-lg {
   content: "\f63f";
 }
 
-:root, :host {
-  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("/assets/fonts/fa-regular-400.woff2") format("woff2"), url("/assets/fonts/fa-regular-400.ttf") format("truetype");
-}
 .far,
 .fa-regular {
   font-family: "Font Awesome 6 Regular";
   font-weight: 400;
 }
 
-:root, :host {
-  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
-}
-
-@font-face {
-  font-family: "Font Awesome 6 Solid";
-  font-style: normal;
-  font-weight: 900;
-  font-display: block;
-  src: url("/assets/fonts/fa-solid-900.woff2") format("woff2"), url("/assets/fonts/fa-solid-900.ttf") format("truetype");
-}
 .fas,
 .fa-solid {
   font-family: "Font Awesome 6 Solid";
@@ -26409,7 +26403,7 @@ small, .small,
   color: transparent;
   border: 0;
   outline: none;
-  background: url("/assets/images/logo-with-text.png") no-repeat;
+  background: url("../images/logo-with-text.png") no-repeat;
   background-size: 100% 100%;
   background-position: center;
 }

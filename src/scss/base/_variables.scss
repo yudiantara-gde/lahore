@@ -48,6 +48,10 @@ $font: (
     fa-solid:           ('Font Awesome 6 Solid')
 );
 
+//path
+$path-fonts: "../fonts/";
+$path-img: "../images/";
+
 //button bootstrap
 $btn-active-box-shadow: none;
 $btn-focus-box-shadow: none;
@@ -71,4 +75,4 @@ $enable-shadows: false;
 //font awesome
 $fa-display: inline-block !default;
 $fa-font-display: block !default;
-$fa-font-path: "/assets/fonts" !default;
+$fa-font-path: "assets/fonts" !default;
