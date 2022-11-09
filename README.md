@@ -1,6 +1,6 @@
-# Luxestate Template
+# Lahore Based Digital Agency
 
-This is my exercise front end stater kick [Lahore Baased Digital Agency](https://lahore.github.io/index.html#/).
+This is my exercise front end stater kick [Lahore Baased Digital Agency](https://yudiantara-gde.github.io/lahore/dist/).
 
 **Note:** 
 Sketch file is available at `design` directory, or you can use a [direct download link](https://www.sketchappsources.com/free-source/4197-agency-web-template-sketch-freebie-resource.html).
@@ -30,7 +30,7 @@ To run the code and see the final HTML page, you must follow these steps:
 -   In the root directory type `gulp` in terminal to start the local server at port 9000.
 
 -   Open Your Browser and type `http://localhost:8080/` in the search bar, and that's it. enjoy!
-
+<!-- 
 ### Screenshots
 
 ![Desktop Screenshot](./design/desktop.jpg)
@@ -163,7 +163,7 @@ Agent JSON Model:
 -   [Font Awesome Documentation](https://fontawesome.com/docs)
 -   [Animate.css Documentation](https://animate.style/)
 -   [WOW.js Documentation](https://wowjs.uk/docs.html)
-
+-->
 ## Author
 
 yudiantara.gde
