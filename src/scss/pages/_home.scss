@@ -438,10 +438,19 @@
     }
 }
 
-.our-works {
+.our-works,
+.our-service,
+.our-blog {
     position: relative;
     width: 100%;
     margin-top: _rem(48);
+
+    @include media-breakpoint-up(md) {margin-top: _rem(56);}
+    @include media-breakpoint-up(lg) {margin-top: _rem(64);}
+    @include media-breakpoint-up(xl) {margin-top: _rem(80);}
+}
+
+.our-works {
     
     .c-title {
         position: relative;
@@ -492,8 +501,6 @@
     }
 
     @include media-breakpoint-up(md) {
-        margin-top: _rem(56);
-
         .c-title {display: none;}
 
         .l-works {
@@ -525,21 +532,9 @@
             .swiper-pagination {display: none;}
         }
     }
-
-    @include media-breakpoint-up(lg) {
-        margin-top: _rem(64);
-
-    }
-
-    @include media-breakpoint-up(xl) {
-        margin-top: _rem(80);
-    }
 }
 
 .our-service {
-    position: relative;
-    width: 100%;
-    margin-top: _rem(48);
     background-color: _color(black-soft);
     padding: _rem(48) 0;
     
@@ -555,19 +550,52 @@
             b {text-transform: uppercase;}
         }
     }
-    
-    @include media-breakpoint-up(md) {
-        margin-top: _rem(56);
-    }
 
     @include media-breakpoint-up(lg) {
-        margin-top: _rem(64);
         padding: _rem(56) 0;
 
         .our-service .c-title {margin-bottom: _rem(48);}
     }
+}
+
+.our-blog {
+    
+    .l-blog {
+        position: relative;
+        width: 100%;
+
+        .row {
+            margin-left: _rem(-16);
+            margin-right: _rem(-16);
+        }
+    }
+
+    .blog {
+        width: 100%;
+        margin-bottom: _rem(16);
+    }
+
+    @include media-breakpoint-up(sm) {
+        .blog {
+            width: 50%;
+            margin-top: _rem(8);
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .blog {
+            width: 33.33%;
+        }
+
+        .blog:first-child {
+            width: 100%;
+            margin-bottom: _rem(32);
+
+            h3 {font-size: _em(40);}
+        }
+    }
 
     @include media-breakpoint-up(xl) {
-        margin-top: _rem(80);
+        .blog:first-child  h3 {font-size: _em(48);}
     }
 }
