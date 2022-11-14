@@ -440,7 +440,11 @@
 
 .our-works,
 .our-service,
-.our-blog {
+.our-blog,
+.our-awards,
+.our-client,
+.work-with-us,
+.the-careers  {
     position: relative;
     width: 100%;
     margin-top: _rem(48);
@@ -597,5 +601,148 @@
 
     @include media-breakpoint-up(xl) {
         .blog:first-child  h3 {font-size: _em(48);}
+    }
+}
+
+.our-awards {
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .l-awards {
+        position: relative;
+        margin-top: _rem(32);
+
+        .row {
+            margin-left: _rem(-16);
+            margin-right: _rem(-16);
+        }
+        .awards {width: 50%;}
+        .awards:nth-child(even) {
+            .awards__body:after {display: none;}
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+
+        p.title {
+            max-width: 80%;
+        }
+
+        .l-awards {
+            .awards {width: 33.33%;}
+            .awards:nth-child(even) {
+                .awards__body:after {display: block;}
+            }
+            .awards:nth-child(3n) {
+                .awards__body:after {display: none;}
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+
+        p.title {max-width: 60%;}
+    }
+
+    @include media-breakpoint-up(lg) {
+        p.title {max-width: 55%;}
+
+        .l-awards {
+            .awards {width: calc(100% / 6);}
+            .awards:nth-child(3n) {
+                .awards__body:after {display: block;}
+            }
+            .awards:last-of-type {
+                .awards__body:after {display: none;}
+            }
+        }
+    }
+}
+
+.our-client {
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .l-client {
+        position: relative;
+        margin-top: _rem(32);
+        border-right: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+
+        .row {
+            margin-left: _rem(0);
+            margin-right: _rem(0);
+        }
+
+        .client {
+            width: 33.33%;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        p.title {max-width: 70%;}
+        .l-client .client {width: calc(100% / 4);}
+    }
+
+    @include media-breakpoint-up(md) {
+        p.title {max-width: 50%;}
+        .l-client .client {width: calc(100% / 6);}
+    }
+
+    @include media-breakpoint-up(lg) {
+        p.title {max-width: 40%;}
+    }
+}
+
+.work-with-us {
+
+    p.title {margin-bottom: 0;}
+    p.h1 {margin-bottom: _rem(32);}
+    p {
+        margin-bottom: _rem(8);
+        
+        a {
+            color: _color(black);
+            position: relative;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        p.h1 {margin-bottom: _rem(48);}
+    }
+
+    @include media-breakpoint-up(lg) {
+        p.h1 {font-size: _em(40);}
+    }
+
+    @include media-breakpoint-up(xl) {
+        p.h1 {font-size: _em(48);}
+    }
+}
+
+.the-careers {
+
+    p.title {margin-bottom: 0;}
+
+    .l-careers {
+        position: relative;
+
+        .row {
+            margin-left: _rem(-16);
+            margin-right: _rem(-16);
+        }
+
+        .careers {
+            width: 100%;
+        }
     }
 }

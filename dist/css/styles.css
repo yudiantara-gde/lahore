@@ -25730,6 +25730,57 @@ small, .small,
     padding-left: 2.5rem;
   }
 }
+.awards {
+  position: relative;
+  padding: 1rem;
+}
+
+.awards__wrp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.awards__body {
+  position: relative;
+}
+
+.awards__body:after {
+  position: absolute;
+  top: 0;
+  right: -2rem;
+  width: 1px;
+  height: 100%;
+  background-color: #D8D8D8;
+  content: "";
+  display: block;
+}
+
+.awards__img {
+  margin-bottom: 1.5rem;
+}
+
+.awards__img img {
+  max-width: 80px;
+  height: auto;
+}
+
+.awards__text p {
+  margin-bottom: 0;
+  color: #D8D8D8;
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.awards__text p b {
+  color: #555770;
+}
+
+.awards:last-child .awards__body:after {
+  display: none;
+}
+
 .btn {
   padding: 7px 16px;
   margin: 0 0;
@@ -26012,6 +26063,115 @@ small, .small,
   width: 100%;
 }
 
+.careers {
+  position: relative;
+  padding-left: 1rem;
+  padding-left: 1rem;
+}
+
+.careers__wrp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.careers__body {
+  position: relative;
+  width: 100%;
+}
+
+.careers__body h2, .careers__body .h2 {
+  margin-bottom: 2rem;
+}
+
+.careers__body p {
+  margin-bottom: 0;
+}
+
+.careers__body p a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding-right: 24px;
+}
+
+.careers__body p a span {
+  color: #28293D;
+  font-size: 0.875em;
+  line-height: 24px;
+  font-family: "Inter Medium", Helvetica, sans-serif;
+  text-decoration: underline;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.careers__body p a:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  font-family: "Font Awesome 6 Solid";
+  font-size: 1rem;
+  line-height: 24px;
+  content: "\f178";
+  color: #28293D;
+  text-align: right;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.careers__body p a:hover {
+  padding-right: 2rem;
+}
+
+.careers__body p a:hover span, .careers__body p a:hover:before {
+  color: #7486e5;
+}
+
+.client {
+  position: relative;
+  padding: 1rem;
+  border-top: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+}
+
+.client__wrp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.client__body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.client__thumb {
+  position: relative;
+  display: block;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.client__thumb a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.client__thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .logo-text {
   position: relative;
 }
@@ -26220,12 +26380,16 @@ small, .small,
   display: block;
 }
 
-.service .wrp-service {
+.service__wrp {
+  position: relative;
+}
+
+.service__body {
   position: relative;
   padding-top: 100%;
 }
 
-.service a {
+.service__body a {
   display: -moz-flex;
   display: -ms-flex;
   display: -webkit-box;
@@ -26253,13 +26417,13 @@ small, .small,
   background-color: transparent;
 }
 
-.service p {
+.service__body p {
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
 }
 
-.service p span {
+.service__body p span {
   display: block;
 }
 
@@ -26276,7 +26440,7 @@ small, .small,
   }
 }
 @media (min-width: 992px) {
-  .service:nth-child(even) .wrp-service {
+  .service:nth-child(even) .service__wrp {
     margin-top: 50%;
   }
 }
@@ -26700,6 +26864,81 @@ small, .small,
     margin-left: 2rem;
   }
 }
+.footer {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 3rem 0 0 0;
+}
+
+.footer__wrp {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.footer__wrp .row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.footer__side {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer__side .logo {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 133px;
+  height: 48px;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: url("../images/logo-with-text.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  margin-bottom: 1rem;
+}
+
+.footer__side p {
+  margin-bottom: 0;
+}
+
+.footer__side p b {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.footer__side ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.footer__side ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0 0.25rem;
+}
+
+.footer__side ul a {
+  display: block;
+  margin: 0 0;
+  color: #28293D;
+}
+
+.footer__side ul a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer__wrp:first-of-type {
+  padding-top: 2rem;
+  border-top: 1px solid #d8d8d8;
+}
+
 .txt-left {
   text-align: left;
 }
@@ -27659,7 +27898,11 @@ p.w-side-line:before {
 }
 .our-works,
 .our-service,
-.our-blog {
+.our-blog,
+.our-awards,
+.our-client,
+.work-with-us,
+.the-careers {
   position: relative;
   width: 100%;
   margin-top: 3rem;
@@ -27668,21 +27911,33 @@ p.w-side-line:before {
 @media (min-width: 768px) {
   .our-works,
 .our-service,
-.our-blog {
+.our-blog,
+.our-awards,
+.our-client,
+.work-with-us,
+.the-careers {
     margin-top: 3.5rem;
   }
 }
 @media (min-width: 992px) {
   .our-works,
 .our-service,
-.our-blog {
+.our-blog,
+.our-awards,
+.our-client,
+.work-with-us,
+.the-careers {
     margin-top: 4rem;
   }
 }
 @media (min-width: 1200px) {
   .our-works,
 .our-service,
-.our-blog {
+.our-blog,
+.our-awards,
+.our-client,
+.work-with-us,
+.the-careers {
     margin-top: 5rem;
   }
 }
@@ -27868,6 +28123,164 @@ p.w-side-line:before {
     font-size: 3em;
   }
 }
+.our-awards p {
+  margin-bottom: 0;
+}
+
+.our-awards .l-awards {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.our-awards .l-awards .row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.our-awards .l-awards .awards {
+  width: 50%;
+}
+
+.our-awards .l-awards .awards:nth-child(even) .awards__body:after {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .our-awards p.title {
+    max-width: 80%;
+  }
+
+  .our-awards .l-awards .awards {
+    width: 33.33%;
+  }
+
+  .our-awards .l-awards .awards:nth-child(even) .awards__body:after {
+    display: block;
+  }
+
+  .our-awards .l-awards .awards:nth-child(3n) .awards__body:after {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .our-awards p.title {
+    max-width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .our-awards p.title {
+    max-width: 55%;
+  }
+
+  .our-awards .l-awards .awards {
+    width: 16.6666666667%;
+  }
+
+  .our-awards .l-awards .awards:nth-child(3n) .awards__body:after {
+    display: block;
+  }
+
+  .our-awards .l-awards .awards:last-of-type .awards__body:after {
+    display: none;
+  }
+}
+.our-client p {
+  margin-bottom: 0;
+}
+
+.our-client .l-client {
+  position: relative;
+  margin-top: 2rem;
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.our-client .l-client .row {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+.our-client .l-client .client {
+  width: 33.33%;
+}
+
+@media (min-width: 576px) {
+  .our-client p.title {
+    max-width: 70%;
+  }
+
+  .our-client .l-client .client {
+    width: 25%;
+  }
+}
+@media (min-width: 768px) {
+  .our-client p.title {
+    max-width: 50%;
+  }
+
+  .our-client .l-client .client {
+    width: 16.6666666667%;
+  }
+}
+@media (min-width: 992px) {
+  .our-client p.title {
+    max-width: 40%;
+  }
+}
+.work-with-us p.title {
+  margin-bottom: 0;
+}
+
+.work-with-us p.h1 {
+  margin-bottom: 2rem;
+}
+
+.work-with-us p {
+  margin-bottom: 0.5rem;
+}
+
+.work-with-us p a {
+  color: #28293D;
+  position: relative;
+  text-decoration: none;
+}
+
+.work-with-us p a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .work-with-us p.h1 {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .work-with-us p.h1 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .work-with-us p.h1 {
+    font-size: 3em;
+  }
+}
+.the-careers p.title {
+  margin-bottom: 0;
+}
+
+.the-careers .l-careers {
+  position: relative;
+}
+
+.the-careers .l-careers .row {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.the-careers .l-careers .careers {
+  width: 100%;
+}
+
 .no-scroll {
   overflow: hidden;
 }
