@@ -4,33 +4,37 @@
     margin: 0 auto _rem(32) auto;
     display: block;
 
-    .wrp-service {
+    &__wrp {
+        position: relative;
+    }
+
+    &__body {
         position: relative;
         padding-top: calc((1/1) * 100%);
-    }
 
-    a {
-        @include vendor('display', 'flex');
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: _rem(32);
-        border: 2px solid _color(white);
-        background-color: transparent;
-    }
+        a {
+            @include vendor('display', 'flex');
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: _rem(32);
+            border: 2px solid _color(white);
+            background-color: transparent;
+        }
 
-    p {
-        color: _color(white);
-        text-align: center;
-        text-transform: uppercase;
+        p {
+            color: _color(white);
+            text-align: center;
+            text-transform: uppercase;
 
-        span {display: block;}
+            span {display: block;}
+        }
     }
 
     &:hover,
@@ -54,7 +58,7 @@
 @include media-breakpoint-up(lg) {
     .service:nth-child(even) {
 
-        .wrp-service {
+        .service__wrp {
             margin-top: 50%;
         }
     }
