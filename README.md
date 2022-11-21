@@ -1,15 +1,18 @@
 # Lahore Based Digital Agency
 
-This is my exercise front end stater kick [Lahore Baased Digital Agency](https://yudiantara-gde.github.io/lahore/dist/).
+Ini merupakan latihan dengan menggunakan scss, pug dan gulp. untuk demo bisa melihat tautan berikut.
 
-**Note:** 
-Sketch file is available at `design` directory, or you can use a [direct download link](https://www.sketchappsources.com/free-source/4197-agency-web-template-sketch-freebie-resource.html).
-this not my design, i just download and use to learn about node, sass, pug and bootstrap.
+[Lahore Baased Digital Agency](https://yudiantara-gde.github.io/lahore/dist/).
 
-## Table of contents
+**Catatan :**
+Desain dari latihan ini berupa file sketch yang mana untuk saat ini hanya tersedia untuk MAC OS. Desain bisa dilihat di folder `design` atau kamu bisa gunakan [tautan berikut] (https://www.sketchappsources.com/free-source/4197-agency-web-template-sketch-freebie-resource.html) untuk mendownload secara langsung.
 
--   [Overview](#overview)
-    -   [How To Run The Code](#running-code)
+Yang perlu diperhatikan, ini bukan desain dari saya. saya hanya menggunakan untuk latihan untuk mempelajari tentang node, sass, pug dan bootstrap.
+
+## Halaman
+
+-   [Awal](#overview)
+    -   [Cara Installasi](#running-code)
     -   [Screenshots](#screenshots)
     -   [Links](#links)
 -   [My process](#my-process)
@@ -21,63 +24,80 @@ this not my design, i just download and use to learn about node, sass, pug and b
 
 ## Overview
 
+Selamat mencoba!
+
 ### Running Code
 
-To run the code and see the final HTML page, you must follow these steps:
+untuk menjalan dan melihat hasil Halaman HTML, silahkan ikuti langkah-langkah berikut :
 
--   Install all required dependencies using npm, write `npm install` in root directory with terminal.
+-   silahkan install semua pakage yang diperlukan dengan menggunakan `npm install` di terminal. jangan lupa masuk terlebih dahulu kedalam folder dari latihan ini. tempat di folder httdocs dari xampp atau mamp.
 
--   In the root directory type `gulp` in terminal to start the local server at port 9000.
+-   setelah semua proses selesai, ketikan `gulp` di terminal.
 
--   Open Your Browser and type `http://localhost:8080/` in the search bar, and that's it. enjoy!
-<!-- 
+-   buka browser mu, ketik `http://localhost:8080/` dan hanya itu. enjoy!
+
+-   jika saya ingin tempatkan hasil html di folder tertentu, harus bagaimana ? well ... itu bisa di set di `gulpfile.js`, pada bagian kode seperti di bawah ini.
+
+```js
+function reload(done) {
+    connect.server({
+        root: 'dist/',
+        livereload: true,
+        port: 8080
+    });
+
+    done();
+}
+```
+
 ### Screenshots
 
+-   Desktop
 ![Desktop Screenshot](./design/desktop.jpg)
+
+-   Tablet
+![Tablet Screenshot](./design/tablet.jpg)
+
+-   Mobile
+![Mobile Screenshot](./design/mobile.jpg)
 
 ### Links
 
 -   Design URL: [Graphberry](https://www.sketchappsources.com/free-source/4197-agency-web-template-sketch-freebie-resource.html)
--   Source Code URL: [Github](https://github.com/yudiantara-gde/lahore.github.io)
--   Live Site URL: [Github Pages](https://lahore.github.io/index.html#/)
+-   Source Code URL: [Github](https://github.com/yudiantara-gde/lahore)
+-   Live Site URL: [Github Pages](https://yudiantara-gde.github.io/lahore/)
 
 ## My process
 
 ### Built with
 
--   Semantic HTML5 Markup
--   Custom CSS3 Properties
--   CSS3 Flexbox & Grid
--   Vanilla Javascript + ES6
--   JSON
--   AJAX
--   SCSS
--   Pug.js
--   Gulp.js @4.0.2
--   Font Awesome Library @6.2.0
--   Normalize.css Library @8.0.1
--   Animate.css Library
--   WOW.js Library
+-   [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+-   [SCSS](https://sass-lang.com/documentation/)
+-   [Pug.js](https://pugjs.org/api/getting-started.html)
+-   [Gulp.js @4.0.2](https://gulpjs.com/)
+-   [Font Awesome Library @6.2.0](https://fontawesome.com/)
+-   [Normalize.css Library @8.0.1](https://necolas.github.io/normalize.css/)
+-   [Animate.css Library](https://github.com/animate-css/animate.css)
+-   [WOW.js Library](https://github.com/matthieua/WOW)
 
 ### Styles
 
 #### Colors
 
--   Tangerine Yellow: #ffcc03
--   Nordic: #1f383d
--   Gray: #f2f2f2
--   Dark Gray: #666666
--   Foghorn: #919eb1
+-   Primary: #7486e5
+-   Gray: #f5f7fc
 -   White: #ffffff
+-   Black : #28293d
 
 #### Fonts
 
 -   Family: [Inter](https://fonts.google.com/specimen/Inter?query=inter)
 -   Weights: 400, 500, 700
 
-### What I learned
+### Apa saja yang baru saya pelajari ?
 
 ```scss
+//BEM 
 &:last-child {
     @media (min-width: 992px) {
         grid-column-end: -1;
@@ -137,24 +157,10 @@ Apartment JSON Model:
 ]
 ```
 
-Agent JSON Model:
-
-```json
-[
-    {
-        "photo": "images/agent-4.webp",
-        "job": "Frontend Developer",
-        "name": "Sarah Jones",
-        "gender": "female",
-        "twitUser": "PhilopaterHany4",
-        "githubUser": "PhilopaterHany",
-        "linkedinUser": "philopater-hany"
-    }
-]
-```
 
 ### Useful Resources
 
+-   [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 -   [MDN: Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 -   [Pug.js Documentation](https://pugjs.org/api/getting-started.html)
 -   [Sass Documentation](https://sass-lang.com/documentation/)
@@ -163,7 +169,7 @@ Agent JSON Model:
 -   [Font Awesome Documentation](https://fontawesome.com/docs)
 -   [Animate.css Documentation](https://animate.style/)
 -   [WOW.js Documentation](https://wowjs.uk/docs.html)
--->
+
 ## Author
 
 yudiantara.gde
