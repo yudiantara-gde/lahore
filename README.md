@@ -34,12 +34,11 @@ untuk menjalan dan melihat hasil Halaman HTML, silahkan ikuti langkah-langkah be
 
 -   setelah semua proses selesai, ketikan `gulp` di terminal.
 
--   buka browser mu, ketik `http://localhost:8080/`dan hanya itu. enjoy!
+-   buka browser mu, ketik `http://localhost:8080/` dan hanya itu. enjoy!
 
 -   jika saya ingin tempatkan hasil html di folder tertentu, harus bagaimana ? well ... itu bisa di set di `gulpfile.js`, pada bagian kode seperti di bawah ini.
 
 ```js
-// set the directory and port
 function reload(done) {
     connect.server({
         root: 'dist/',
@@ -49,8 +48,8 @@ function reload(done) {
 
     done();
 }
+```
 
-<!-- 
 ### Screenshots
 
 ![Desktop Screenshot](./design/desktop.jpg)
@@ -69,9 +68,9 @@ function reload(done) {
 
 ### Built with
 
--   [Bootstrap 5.0] (https://getbootstrap.com/docs/5.0/getting-started/introduction/)
--   [SCSS] (https://sass-lang.com/documentation/)
--   [Pug.js] (https://pugjs.org/api/getting-started.html)
+-   [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+-   [SCSS](https://sass-lang.com/documentation/)
+-   [Pug.js](https://pugjs.org/api/getting-started.html)
 -   [Gulp.js @4.0.2] (https://gulpjs.com/)
 -   [Font Awesome Library @6.2.0] (https://fontawesome.com/)
 -   [Normalize.css Library @8.0.1] (https://necolas.github.io/normalize.css/)
@@ -172,7 +171,7 @@ Agent JSON Model:
 
 ### Useful Resources
 
--   [Bootstrap 5.0] (https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+-   [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 -   [MDN: Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 -   [Pug.js Documentation](https://pugjs.org/api/getting-started.html)
 -   [Sass Documentation](https://sass-lang.com/documentation/)
