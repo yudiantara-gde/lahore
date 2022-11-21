@@ -52,10 +52,13 @@ function reload(done) {
 
 ### Screenshots
 
+-   Desktop
 ![Desktop Screenshot](./design/desktop.jpg)
 
+-   Tablet
 ![Tablet Screenshot](./design/tablet.jpg)
 
+-   Mobile
 ![Mobile Screenshot](./design/mobile.jpg)
 
 ### Links
@@ -71,11 +74,11 @@ function reload(done) {
 -   [Bootstrap 5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 -   [SCSS](https://sass-lang.com/documentation/)
 -   [Pug.js](https://pugjs.org/api/getting-started.html)
--   [Gulp.js @4.0.2] (https://gulpjs.com/)
--   [Font Awesome Library @6.2.0] (https://fontawesome.com/)
--   [Normalize.css Library @8.0.1] (https://necolas.github.io/normalize.css/)
--   [Animate.css Library] (https://github.com/animate-css/animate.css)
--   [WOW.js Library] (https://github.com/matthieua/WOW)
+-   [Gulp.js @4.0.2](https://gulpjs.com/)
+-   [Font Awesome Library @6.2.0](https://fontawesome.com/)
+-   [Normalize.css Library @8.0.1](https://necolas.github.io/normalize.css/)
+-   [Animate.css Library](https://github.com/animate-css/animate.css)
+-   [WOW.js Library](https://github.com/matthieua/WOW)
 
 ### Styles
 
@@ -94,6 +97,7 @@ function reload(done) {
 ### Apa saja yang baru saya pelajari ?
 
 ```scss
+//BEM 
 &:last-child {
     @media (min-width: 992px) {
         grid-column-end: -1;
@@ -153,21 +157,6 @@ Apartment JSON Model:
 ]
 ```
 
-Agent JSON Model:
-
-```json
-[
-    {
-        "photo": "images/agent-4.webp",
-        "job": "Frontend Developer",
-        "name": "Sarah Jones",
-        "gender": "female",
-        "twitUser": "PhilopaterHany4",
-        "githubUser": "PhilopaterHany",
-        "linkedinUser": "philopater-hany"
-    }
-]
-```
 
 ### Useful Resources
 
